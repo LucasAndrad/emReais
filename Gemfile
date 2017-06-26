@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby "2.3.1"
 
 # my gems start here
 gem 'inox_converter', '~> 1.0.1'
