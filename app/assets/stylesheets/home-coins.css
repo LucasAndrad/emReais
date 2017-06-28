@@ -1,6 +1,24 @@
+.coin-input-home {
+	padding: 5px 1%;
+	font-size: 95%;
+	width: 15%;
+	margin-right: 10px;
+	
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid black;
+}
+
+.coin-input-home:focus {
+	border-bottom: 2px solid black;
+}
+
 .dolar-container {
-	width: 100%;
 	font-size: 180%;
-	display: flex;
 	text-align: center;
+	display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }

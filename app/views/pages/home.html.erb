@@ -1,20 +1,24 @@
- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
 <h1 class="home-title"> emReais.com </h1>
 
 <div class="dolar-container">
 
-	<div class="dolar-container-element" style="text-align: right; margin-left: 100px;">
-		$ <input type="number" name="dolar-value" value="<%= @dolar_value %>" id="dolar-input" class="coin-input">  dólares
-	</div>
-	<div class="dolar-container-element" style="float: left; margin-top: 10px; margin-left: -150px;">	
-		<div class="total-dolares" id="total-dolares-result">   = R$ <%= number_with_precision(InoxConverter.convertCurrency(@dolar_value, "USD", "BRL").round(2), precision: 2) %> reais
+		$ <input type="number" name="dolar-value" value="<%= @dolar_value %>" id="dolar-input" class="coin-input-home">  dólares
+
+		<div class="total-dolares" id="total-dolares-result"> 
+		= R$ <%= number_with_precision(InoxConverter.convertCurrency(@dolar_value, "USD", "BRL").round(2), precision: 2) %> reais
 		</div>
-	</div>
+
+
 </div>
 
 <br>
 <br>
 £ 1,00 euro = R$ <%= number_with_precision(InoxConverter.convertCurrency(1, "EUR", "BRL").round(2), precision: 2) %> reais
+<br><br><br>
+bandeira ta aqui <!-- <span class="flag-icon flag-icon-br" style="font-size: 1000%;"></span>
+
+<img class="flag" src="/assets/flags/4x3/af.svg" alt="Afghanistan Flag"> -->
 
 <script type="text/javascript">
 
