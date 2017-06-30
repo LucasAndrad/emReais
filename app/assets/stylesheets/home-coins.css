@@ -50,7 +50,10 @@ Dolar style
 
 .other-coins-home {
 	width: 100%;
-	display: flex;
+	text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .commun {
