@@ -10,6 +10,7 @@ input[type="number"] {
 
 .application-body {
 	font-family: 'Varela Round', sans-serif;
+	margin: 0;
 }
 
 .coin-input {

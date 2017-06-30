@@ -4,11 +4,21 @@
 	border-right: none;
 	border-left: none;
 	border-bottom: 1px solid black;
-	direction: rtl;
+	
 }
 
 .coin-input-home:focus {
 	border-bottom: 2px solid black;
+}
+
+.flag {
+	height: 50px; 
+	width: 55px;
+}
+
+.flag-home {
+	height: 60px; 
+	width: 65px;	
 }
 
 .left-flag {
@@ -38,16 +48,6 @@ Dolar style
   margin-right: auto;
 }
 
-.us-flag-home {
-	font-size: 150%; 
-	margin-right: 10px;
-}
-
-.br-flag-home {
-	font-size: 150%; 
-	margin-left: 10px;
-}
-
 .other-coins-home {
 	width: 100%;
 	text-align: center;
@@ -73,7 +73,7 @@ Euro style
 	background-color: transparent;
 }
 .euro-container {
-	background-color: #7dbae3;		
+	background-color: #b9d8ed;		
 	font-size: 150%;
 	text-align: center;
 	display: flex;
@@ -83,11 +83,52 @@ Euro style
 }
 
 .libra-container {
-	background-color: #f57373;		
+	background-color: #f0a3a3;		
 	font-size: 150%;
 	text-align: center;
 	display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+	
+	.dolar-container {
+		font-size: 120%;
+		text-align: center;
+		display: flex;
+	  justify-content: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.dolar-input-home {
+		width: 20%;
+		
+	}
+
+	.flag {
+		height: 15%; 
+		width: 15%;
+	}
+
+	.flag-home {
+		height: 10%; 
+		width: 10%;
+	}
+
+	.other-coins-home {
+		width: 100%;
+		text-align: center;
+	  justify-content: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.commun {
+		width: 100%;
+	}
+
+
 }
