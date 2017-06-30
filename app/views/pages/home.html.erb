@@ -3,22 +3,44 @@
 
 <div class="dolar-container">
 
-		$ <input type="number" name="dolar-value" value="<%= @dolar_value %>" id="dolar-input" class="coin-input-home">  dólares
+	<span class="us-flag-home flag-icon flag-icon-us"></span>
+		$ <input type="number" name="dolar-value" value="<%= @dolar_value %>" id="dolar-input" class="dolar-input-home coin-input-home">  
 
 		<div class="total-dolares" id="total-dolares-result"> 
-		= R$ <%= number_with_precision(InoxConverter.convertCurrency(@dolar_value, "USD", "BRL").round(2), precision: 2) %> reais
+		= R$ <%= number_with_precision(InoxConverter.convertCurrency(@dolar_value, "USD", "BRL").round(2), precision: 2) %> 
 		</div>
-
+	<span class="br-flag-home flag-icon flag-icon-br"></span>	
 
 </div>
 
 <br>
 <br>
-£ 1,00 euro = R$ <%= number_with_precision(InoxConverter.convertCurrency(1, "EUR", "BRL").round(2), precision: 2) %> reais
-<br><br><br>
-bandeira ta aqui <!-- <span class="flag-icon flag-icon-br" style="font-size: 1000%;"></span>
+<div class="other-coins-home">
 
-<img class="flag" src="/assets/flags/4x3/af.svg" alt="Afghanistan Flag"> -->
+	<div class="commun euro-container">
+		<span class="us-flag-home flag-icon flag-icon-eu"></span>
+			€ <input type="number" name="euro-value" value="<%= @euro_value %>" id="euro-input" class="euro-input-home coin-input-home">  
+
+			<div class="total-euros" id="total-euros-result"> 
+			= R$ <%= number_with_precision(InoxConverter.convertCurrency(@euro_value, "EUR", "BRL").round(2), precision: 2) %> 
+			</div>
+		<span class="br-flag-home flag-icon flag-icon-br"></span>
+	</div>
+
+	<div class="commun libra-container">
+		<span class="us-flag-home flag-icon flag-icon-gb"></span>
+			£ <input type="number" name="libra-value" value="<%= @libra_value %>" id="libra-input" class="euro-input-home coin-input-home">  
+
+			<div class="total-euros" id="total-libras-result"> 
+			= R$ <%= number_with_precision(InoxConverter.convertCurrency(@euro_value, "GBP", "BRL").round(2), precision: 2) %> 
+			</div>
+		<span class="br-flag-home flag-icon flag-icon-br"></span>
+
+	</div>
+</div>
+<br><br><br>
+
+<!-- <img class="flag" src="/assets/flags/4x3/af.svg" alt="Afghanistan Flag"> -->
 
 <script type="text/javascript">
 
@@ -30,6 +52,30 @@ bandeira ta aqui <!-- <span class="flag-icon flag-icon-br" style="font-size: 100
 		else {
 			new_dolar = dolar * <%= @one_dolar %>
 		}
-		$('#total-dolares-result').html('= R$ '+new_dolar.toFixed(2)+ ' reais')
+		$('#total-dolares-result').html('= R$ '+new_dolar.toFixed(2));
 	})
+
+	$("#euro-input").keyup(function(){
+		let euro = parseFloat($('#euro-input').val(), 10);
+		let new_euros;
+		console.log(euro);
+		if (euro == null || isNaN(euro)) { new_euros = 0.00 }
+		else {
+			new_euros = euro * <%= @one_euro %>
+		}
+		$('#total-euros-result').html('= R$ '+new_euros.toFixed(2));
+	})
+
+	$("#libra-input").keyup(function(){
+		let libra = parseFloat($('#libra-input').val(), 10);
+		let new_libras;
+		console.log(libra);
+		if (libra == null || isNaN(libra)) { new_libras = 0.00 }
+		else {
+			new_libras = libra * <%= @one_libra %>
+		}
+		$('#total-libras-result').html('= R$ '+new_libras.toFixed(2));
+	})
+
+	
 </script>
