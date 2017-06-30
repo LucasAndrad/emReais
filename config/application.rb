@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module EmReais
   class Application < Rails::Application
+    config.assets.enabled = true
+    config.assets.paths << "#{Rails.root}/app/assets/"
     # Initialize configuration defaults for originally generated Rails version.
 
     # Settings in config/environments/* take precedence over those specified here.
