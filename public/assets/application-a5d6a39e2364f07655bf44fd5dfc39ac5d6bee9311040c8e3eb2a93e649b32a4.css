@@ -1,3 +1,24 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.application-body {
+	font-family: 'Varela Round', sans-serif;
+	margin: 0;
+}
+
+.coin-input {
+	padding: 0.5% 0.5%;
+	font-size: 100%;
+	width: 15%;
+}
+
 .coin-input-home {
 	text-align: left;
 	border-top: none;
@@ -139,3 +160,26 @@ Euro style
 	}
 
 }
+/* line 5, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/pages.scss */
+.home-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 400%;
+  text-align: center;
+  margin-top: 3%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
