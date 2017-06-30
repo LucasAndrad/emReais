@@ -11,6 +11,14 @@
 	border-bottom: 2px solid black;
 }
 
+.left-flag {
+	margin-right: 8px;
+}
+
+.right-flag {
+	margin-left: 8px;
+}
+
 /*
 Dolar style
 */
