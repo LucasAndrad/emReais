@@ -19,3 +19,15 @@ input[type="number"] {
 	width: 15%;
 }
 
+footer {
+	background-color: #e0e0e0;
+	position: absolute;
+	border-top: 2px solid #949494;
+	left: 0;
+	bottom: 0;
+	height: 10%;
+	width: 100%;
+	overflow:hidden;
+	text-align: center;
+	color: #5c5c5c;
+}
