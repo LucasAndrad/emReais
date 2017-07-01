@@ -1,0 +1,7 @@
+<h1> Moedas </h1>
+
+<% @coins.each do |coin| %>
+
+  <%= link_to coin.name, coin_show_path(coin, country: coin.country) %>
+
+<% end %>
