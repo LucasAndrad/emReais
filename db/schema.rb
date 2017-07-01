@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 20170701161033) do
 
   create_table "coins", force: :cascade do |t|
     t.string "name"
-    t.string "initials"
+    t.string "code"
     t.string "country"
     t.string "flag"
+    t.string "symbol"
     t.text "story"
     t.float "value"
     t.datetime "created_at", null: false
