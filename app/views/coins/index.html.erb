@@ -1,7 +1,29 @@
-<h1> Moedas </h1>
+<style>
+  footer {
+    position: relative;
+  }
+</style>
 
-<% @coins.each do |coin| %>
+<div class="coins-container">
+  <h1 class="coins-index-title" > Moedas </h1> 
 
-  <%= link_to coin.name, coin_show_path(coin, country: coin.country) %>
+  <% @coins.each do |coin| %>
 
-<% end %>
+    <div class="coin-container">
+      <div class="coin-title-name">
+        <%= link_to coin.name, coin_show_path(coin, country: coin.country), class: 'coin-name-link' %>
+      </div>
+      <img src="<%= coin.flag %>" alt="<%= coin.country%> Flag" class="flag-coins-index">
+      <p class"coin-country-index">
+        <%= coin.country %>
+      </p>
+
+      <div class="coin-value">
+        1 <%= coin.symbol %> = R$ <%= InoxConverter.convertCurrency(1, coin.code, "BRL").round(4) %> 
+        <br> <br>
+        <%= link_to "Novos valores", coin_show_path(coin, country: coin.country) %>
+      </div>
+    </div>
+
+  <% end %>
+</div>

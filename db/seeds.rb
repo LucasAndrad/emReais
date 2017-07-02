@@ -19,7 +19,7 @@ coins = Coin.create([
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/mx.svg', 
       story: '' },
     { name: 'Roblo Russo', code: 'RUB', symbol: '₽', country: 'Rússia', 
-      flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/mx.svg', 
+      flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg', 
       story: '' },
     { name: 'Dólar de Hong Kong', code: 'HKD', symbol: 'HK$', country: 'Hong Kong', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/hk.svg', 
