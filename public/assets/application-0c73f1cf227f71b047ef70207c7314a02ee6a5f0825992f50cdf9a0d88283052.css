@@ -1,0 +1,309 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.application-body {
+	font-family: 'Varela Round', sans-serif;
+	margin: 0;
+}
+
+.coin-input {
+	padding: 0.5% 0.5%;
+	font-size: 100%;
+	width: 15%;
+}
+
+footer {
+	background-color: #e0e0e0;
+	position: absolute;
+	border-top: 2px solid #949494;
+	left: 0;
+	bottom: 0;
+	height: 10%;
+	width: 100%;
+	overflow:hidden;
+	text-align: center;
+  color: #5c5c5c;
+}
+
+@media screen and (max-width: 600px) {
+	footer {
+		font-size: 80%;
+		height: 7%;
+	}
+}
+/* line 1, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coins-index-title {
+  text-align: center;
+}
+
+/* line 5, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coins-container {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 65%;
+}
+
+/* line 13, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coin-container {
+  border: 2px solid #a8a8a8;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/* line 21, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.flag-coins-index {
+  height: 15%;
+  width: 15%;
+  margin-top: 2%;
+  margin-left: 7.5%;
+}
+
+/* line 28, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coin-title-name {
+  padding: 1% 1%;
+  background-color: #292929;
+  width: 30%;
+  margin-top: -1px;
+  margin-left: -2px;
+  border-radius: 15px;
+  border: 5px solid #292929;
+}
+
+/* line 38, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coin-name-link {
+  color: white;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+/* line 44, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+p {
+  text-align: center;
+  width: 30%;
+  margin-left: 0px;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* line 52, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coin-value {
+  margin-top: -22%;
+  float: right;
+  margin-right: 22%;
+  font-size: 150%;
+}
+
+/* line 59, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins-index.scss */
+.coin-story {
+  width: 50%;
+  max-height: 100%;
+  font-size: 75%;
+}
+/* line 1, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins.scss */
+.myButton {
+  -moz-box-shadow: 0px 0px 3px 0px #0d0d0d;
+  -webkit-box-shadow: 0px 0px 3px 0px #0d0d0d;
+  box-shadow: 0px 0px 3px 0px #0d0d0d;
+  background-color: #1250cc;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  border: 1px solid #2033b0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 1% 1%;
+  text-decoration: none;
+  text-shadow: 1px 0px 27px #000000;
+  position: absolute;
+  margin-left: 10%;
+}
+
+/* line 20, /home/lucas/Documents/blogs/emReais/app/assets/stylesheets/coins.scss */
+.myButton:hover {
+  background-color: #04246e;
+}
+.home-title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 400%;
+	text-align: center;
+	margin-top: 3%;
+}
+
+.coin-input-home {
+	text-align: left;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid black;
+	
+}
+
+.coin-input-home:focus {
+	border-bottom: 2px solid black;
+}
+
+.flag {
+	height: 50px; 
+	width: 55px;
+}
+
+.flag-home {
+	height: 60px; 
+	width: 65px;	
+}
+
+.left-flag {
+	margin-right: 8px;
+}
+
+.right-flag {
+	margin-left: 8px;
+}
+
+/*
+Dolar style
+*/
+.dolar-input-home {
+	padding: 5px 2%;
+	font-size: 95%;
+	width: 8%;
+	margin-right: 10px;
+}
+
+.dolar-container {
+	font-size: 180%;
+	text-align: center;
+	display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.other-coins-home {
+	width: 100%;
+	text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commun {
+	width: 50%;
+	padding: 50px 0px;
+}
+
+/*
+Euro style
+*/
+.euro-input-home {
+	padding: 2px 1px;
+	font-size: 100%;
+	width: 18%;
+	margin-right: 5px;
+	padding-left: 5px;
+	background-color: transparent;
+}
+.euro-container {
+	background-color: #b9d8ed;		
+	font-size: 150%;
+	text-align: center;
+	display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.libra-container {
+	background-color: #f0a3a3;		
+	font-size: 150%;
+	text-align: center;
+	display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 390px) {
+
+  .home-title {
+  	font-size: 280%;
+  	margin-top: 7%;
+  	margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+	.dolar-container {
+		font-size: 120%;
+		text-align: center;
+		display: flex;
+	  justify-content: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.dolar-input-home {
+		width: 20%;
+		
+	}
+
+	.flag {
+		height: 12%; 
+		width: 12%;
+	}
+
+	.flag-home {
+		height: 10%; 
+		width: 10%;
+	}
+
+	.other-coins-home {
+		width: 100%;
+		text-align: center;
+	  justify-content: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.commun {
+		width: 100%;
+	}
+
+	.euro-container {
+		font-size: 120%;		
+	}
+
+	.libra-container {
+		font-size: 120%;		
+	}
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
