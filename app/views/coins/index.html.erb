@@ -19,7 +19,7 @@
       </p>
 
       <div class="coin-value">
-        1 <%= coin.symbol %> = R$ 0.0000 
+        1 <%= coin.symbol %> = <%= InoxConverter.convertCurrency(1, coin.code, "BRL").round(4) %> 
         <br> <br>
         <%= link_to "Novos valores", coin_show_path(coin, country: coin.country) %>
       </div>
