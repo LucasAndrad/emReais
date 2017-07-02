@@ -29,7 +29,7 @@ footer {
 	width: 100%;
 	overflow:hidden;
 	text-align: center;
-	color: #5c5c5c;
+  color: #5c5c5c;
 }
 
 @media screen and (max-width: 600px) {
