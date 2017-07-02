@@ -3,10 +3,10 @@
     position: relative;
   }
 </style>
-
+  
 <div class="coins-container">
   <h1 class="coins-index-title" > Moedas </h1> 
-
+  <%= link_to 'Home' , home_path, class: 'button button-home'%>
   <% @coins.each do |coin| %>
 
     <div class="coin-container">
@@ -19,7 +19,7 @@
       </p>
 
       <div class="coin-value">
-        1 <%= coin.symbol %> = R$ <%= InoxConverter.convertCurrency(1, coin.code, "BRL").round(4) %> 
+        1 <%= coin.symbol %> = R$ 0.0000 
         <br> <br>
         <%= link_to "Novos valores", coin_show_path(coin, country: coin.country) %>
       </div>

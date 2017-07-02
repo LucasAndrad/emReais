@@ -1,5 +1,5 @@
-.myButton {
-	-moz-box-shadow: 0px 0px 3px 0px #0d0d0d;
+.button {
+  -moz-box-shadow: 0px 0px 3px 0px #0d0d0d;
 	-webkit-box-shadow: 0px 0px 3px 0px #0d0d0d;
 	box-shadow: 0px 0px 3px 0px #0d0d0d;
 	background-color:#1250cc;
@@ -7,16 +7,64 @@
 	-webkit-border-radius: 9px;
 	border-radius: 9px;
 	border:1px solid #2033b0;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
+	cursor: pointer;
+	color: #ffffff;
 	padding: 1% 1%;
-	text-decoration:none;
+	text-decoration: none;
 	text-shadow: 1px 0px 27px #000000;
   position: absolute;
+}
+.myButton {
+  display: inline-block;
   margin-left: 10%;
 }
 
-.myButton:hover {
+.button:hover {
 	background-color:#04246e;
+}
+
+.button-home {
+  display:inline-block;
+  margin-left: 3%;
+  margin-top: -6%;
+}
+
+.myButton-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .myButton {
+    display: none;
+  }
+
+  .myButton-mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button-home {
+    margin-top: -8%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myButton-mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button-home {
+    margin-top: -15%;
+  }
 }
