@@ -38,3 +38,15 @@ footer {
 		height: 7%;
 	}
 }
+
+@media screen and (max-width: 900px) and (max-height: 725px) {
+	footer {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 375px), screen and (max-height: 515px) {
+	footer {
+		position: absolute;
+	}	
+}
