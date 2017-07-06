@@ -5,6 +5,11 @@
 	margin-top: 3%;
 }
 
+.home-subtitle {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+}
+
 .coin-input-home {
 	text-align: left;
 	border-top: none;

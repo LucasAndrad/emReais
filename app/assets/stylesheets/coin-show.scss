@@ -1,0 +1,164 @@
+.coin-show-title {
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: 0;
+}
+
+.coin-show-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coin-show-flag {
+  width: 240px;
+  height: 240px;
+  display: block;
+  margin-top: -2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coin-show-subcontainer {
+  font-size: 150%;
+  text-align: center;
+	display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.coin-show-input {
+  font-size: 100%;
+  border: 2px solid #a8a8a8;
+  padding: 8px 1%;
+  width: 9%;
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: black;
+}
+
+.coin-show-story-container {
+  padding: 0% 0%;
+  border: 2px solid #a8a8a8;
+  border-radius: 10px;
+  width: 55%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coin-show-story-title {
+  text-align: center;
+}
+
+.coin-show-story-body {
+  border-top: 2px solid #a8a8a8;
+  text-align: justify;
+  text-indent: 5%;
+  margin-top: -2%;
+  padding: 2% 2%;
+}
+
+.button-coin-show {
+	background-color:#1250cc;
+	border-radius: 5px;
+	border: 1px solid #2033b0;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 5px 1%;
+	text-decoration: none;
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 10%;  
+}
+
+.button-coin-show:hover {
+	background-color:#04246e;
+}
+
+.button2 {
+  margin-left: 22%;
+}
+
+.coin-show-buttons {
+  width: 40%;
+  height: 40%;
+  margin-top: 1%;
+  position: absolute;
+  padding-left: 10%;
+}
+
+@media screen and (max-width: 1100px) {
+  .coin-show-container {
+    width: 100%;
+  }
+
+  .button1 {
+    margin-right: 10%;
+  }
+
+  .coin-show-buttons {
+    width: 90%;
+    height: 40%;
+    margin-top: 1%;
+    position: relative;
+    padding-left: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .coin-show-title {
+    font-size: 200%;
+  }
+
+  .coin-show-flag {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 2%;
+  }
+  .coin-show-container {
+    width: 92%;
+  }
+
+  .coin-show-subcontainer { 
+    width: 100%;
+    font-size: 120%;
+  }
+
+  .coin-show-story-container {
+    margin-top: 4%;
+    font-size: 110%;
+    width: 100%;
+  }
+
+  .coin-show-input {
+    width: 30%;
+  }
+
+  .button-coin-show {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0; 
+  }
+
+  .coin-show-buttons {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+  }
+
+  .button1 {
+    margin-right: 3%;
+  }
+
+}
