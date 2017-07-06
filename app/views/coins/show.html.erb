@@ -1,1 +1,41 @@
-<h1> <%= @coin.name %> </h1>
+
+<div class="coin-show-buttons">
+  <%= link_to 'Home' , home_path, class: 'button-coin-show button1' %>
+  <%= link_to 'Moedas' , coins_path, class: 'button-coin-show button2' %>
+</div>
+<h1 class="coin-show-title"> <%= @coin.name %> </h1>
+
+<div class="coin-show-container">
+  <img src="<%= @coin.flag %>" alt="<%= @coin.country%> Flag" class="coin-show-flag">
+    
+    <div class="coin-show-subcontainer">
+      <%= @coin.symbol %> 
+      <input type="number" name="coin-value" value="1" id="coin-input" class="coin-show-input">  
+
+      <div class="total-coins" id="total-coin-result"> 
+        = R$ <%= number_with_precision(InoxConverter.convertCurrency(1, @coin.code, "BRL").round(2), precision: 2) %>
+      </div>
+    </div>
+
+    <div class="coin-show-story-container">
+      <h2 class="coin-show-story-title"> História da moeda </h2>
+      <div class="coin-show-story-body">
+        <%= @coin.story %>
+      </div>
+    </div>
+</div>  
+
+<script type="text/javascript">
+
+	$("#coin-input").keyup(function(){
+		let coin = parseFloat($('#coin-input').val(), 10);
+		let new_coin;
+		console.log(coin);
+		if (coin == null || isNaN(coin)) { new_coin = 0.00 }
+		else {
+			new_coin = coin * <%= @one_coin %>
+		}
+		$('#total-coin-result').html('= R$ '+new_coin.toFixed(2));
+	});
+
+</script>
