@@ -6,5 +6,6 @@ class CoinsController < ApplicationController
 
   def show
     @coin = Coin.find(params[:id])
+    @one_coin = InoxConverter.convertCurrency(1, @coin.code, "BRL")
   end
 end
