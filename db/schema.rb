@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170701161033) do
     t.string "country"
     t.string "flag"
     t.string "symbol"
+    t.string "url_name"
     t.text "story"
     t.float "value"
     t.datetime "created_at", null: false

@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
 # Coins
   get 'moedas' => 'coins#index', as: 'coins'
-  get ':country/.:id' => 'coins#show', as: 'coin_show'
+  get 'moeda/:url_name/.:id' => 'coins#show', as: 'coin_show'
 
 end
