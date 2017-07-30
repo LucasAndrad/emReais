@@ -6,7 +6,7 @@
 <div class="dolar-container">
 
 	<img src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" alt="Brazil flag" class="flag-home left-flag">
-		$ <input type="number" name="dolar-value" value="<%= @dolar_value %>" id="dolar-input" class="dolar-input-home coin-input-home">  
+		$ <input type="number" name="dolar-value" value="<%= @dolar_value %>" id="dolar-input" class="coin-home-input input1">  
 
 		<div class="total-dolares" id="total-dolares-result"> 
 		  = R$ <%= number_with_precision(@one_dolar, precision: 2) %> 
@@ -21,7 +21,7 @@
 
 	<div class="commun euro-container">
 		<img src="https://lipis.github.io/flag-icon-css/flags/4x3/eu.svg" alt="Brazil flag" class="flag left-flag">
-			€ <input type="number" name="euro-value" value="<%= @euro_value %>" id="euro-input" class="euro-input-home coin-input-home">  
+			€ <input type="number" name="euro-value" value="<%= @euro_value %>" id="euro-input" class="coin-home-input input2">  
 
 			<div class="total-euros" id="total-euros-result"> 
 			  = R$ <%= number_with_precision(@one_euro, precision: 2) %> 
@@ -31,7 +31,7 @@
 
 	<div class="commun libra-container">
 		<img src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg" alt="Brazil flag" class="flag left-flag"> 
-			£ <input type="number" name="libra-value" value="<%= @libra_value %>" id="libra-input" class="euro-input-home coin-input-home">  
+			£ <input type="number" name="libra-value" value="<%= @libra_value %>" id="libra-input" class="coin-home-input input2">  
 
 			<div class="total-euros" id="total-libras-result"> 
 			  = R$ <%= number_with_precision(@one_libra, precision: 2) %> 
