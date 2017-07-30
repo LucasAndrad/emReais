@@ -6,6 +6,21 @@ class CoinsController < ApplicationController
 
   def show
     @coin = Coin.find(params[:id])
-    @one_coin = InoxConverter.convertCurrency(1, @coin.code, "BRL")
   end
+
+  def magic
+    dolar_coin = Coin.find(1)
+    @date_value = dolar_coin.updated_at.strftime("%d / %m / %Y")
+    @time_value = dolar_coin.updated_at.strftime("%H:%M")
+  end
+
+  def update_coins_value
+    coins = Coin.all
+    coins.each do |coin|
+      new_value = InoxConverter.convertCurrency(1, coin.code, "BRL")
+      coin.update(value: new_value)
+    end
+    redirect_to coin_magic_path
+  end
+
 end

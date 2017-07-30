@@ -13,7 +13,7 @@
       <input type="number" name="coin-value" value="1" id="coin-input" class="coin-show-input">  
 
       <div class="total-coins" id="total-coin-result"> 
-        = R$ <%= number_with_precision(InoxConverter.convertCurrency(1, @coin.code, "BRL").round(2), precision: 2) %>
+        = R$ <%= number_with_precision(@coin.value.round(2), precision: 2) %>
       </div>
     </div>
 
@@ -33,7 +33,7 @@
 		console.log(coin);
 		if (coin == null || isNaN(coin)) { new_coin = 0.00 }
 		else {
-			new_coin = coin * <%= @one_coin %>
+			new_coin = coin * <%= @coin.value %>
 		}
 		$('#total-coin-result').html('= R$ '+new_coin.toFixed(2));
 	});

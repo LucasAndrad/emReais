@@ -1,9 +1,14 @@
 class PagesController < ApplicationController
 
   def home
-    @one_dolar = InoxConverter.convertCurrency(1, "USD", "BRL").round(2)
-    @one_euro = InoxConverter.convertCurrency(1, "EUR", "BRL").round(2)
-    @one_libra = InoxConverter.convertCurrency(1, "GBP", "BRL").round(2)
+    dolar = Coin.find_by(code: "USD")
+    @one_dolar = dolar.value.round(2)
+
+    euro = Coin.find_by(code: "EUR")
+    @one_euro = euro.value.round(2)
+
+    libra = Coin.find_by(code: "GBP")
+    @one_libra = libra.value.round(2)
   end
 
   def get_dolar_value(dolar)
