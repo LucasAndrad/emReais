@@ -7,6 +7,21 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 coins = Coin.create([
+    { name: 'Dólar Americano', code: 'USD', symbol: '$', country: 'Estados Unidos',
+      url_name: 'dolar-americano', 
+      flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/us.svg', 
+      story: '' },  
+    
+    { name: 'Euro', code: 'EUR', symbol: '€', country: 'União Europeia',
+      url_name: 'euro', 
+      flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/eu.svg', 
+      story: '' },
+
+    { name: 'Lira Esterlina', code: 'GBP', symbol: '£', country: 'Reino Unido',
+      url_name: 'libra-esterlina', 
+      flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg', 
+      story: '' },
+
     { name: 'Yuan Renminbi', code: 'CNY', symbol: '¥', country: 'China',
       url_name: 'china-yuan-renminbi',
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/cn.svg', 
@@ -44,18 +59,18 @@ coins = Coin.create([
     { name: 'Baht', code: 'THB', symbol: '฿', country: 'Tailândia', 
       url_name: 'tailandia-baht',
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/th.svg', 
-      story: '' },
+      story: 'A moeda tailandesa, assim como a libra esterlina, teve origem a partir de uma unidade de massa, seu valor de origem era representado pelo seu peso em prata (15 gramas), ou seja, uma moeda valia o 15 gramas de prata. Voltando um pouco mais no tempo, durante o período Sukhothai (1238-1438) a moeda na Tailândai era chamada de "phot duang".  Eram pedaços de prata e o peso de cada pedaço possuia seu valor monetário, Bath é o nome de um valor específico entre os pedaços (cada um possuia um nome). Esse sistema de moedas baseado no peso e no valor da prata foi utilizado até 1897 quando Jayanta Mongkol inventou um sistema decinal para o país no qual 1 bath = 100 Satang, esse novo sistema foi abraçado pelo rei Chulalongkorn (1868-1910). A notação Bath não sofrou mudanças em seu nome e como sempre foi baseada no valor da prata também não sofreu uma nova taxação do governo para recuperar a desvalorização da moeda durante a crise asiática (1997), ao longo dos anos ela simplesmente sofre algumas fixações, por exemplo durante a segunda guerra mundial o valor de 11 Bath foi fixado à 1 Iene japonês.' },
 
     { name: 'Złoty', code: 'PLN', symbol: 'zł', country: 'Polônia',
       url_name: 'polonia-zloty', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/pl.svg', 
-      story: '' },
+      story: 'A moeda da Polônia, "Złoty", significa ouro e atualmente 1 zł e dividido em 100 groszy. Voltando um pouco mais na história, muito antes do Złoty a moeda polonesa era a Grzywna que valia 210 gramas de prata, utilizada até o século 14 quando foi substituida pela Kraków grzywna que valia 198 gramas de prata. A história dessa moeda é dividida em quatro fases. A primeira fase começa ainda na idade média, nos séculos 14 e 15 ... Falar das outras fases... Atualmente a moeda polonesa enfrenta um impase, com a entrada da Polônia na União Européia em Maio de 2004 o país é obrigado a aderir o euro como moeda oficial (uma das condições impostas para que o país fosse aceito na UE) entretanto a contituição Polonesa protege o Złoty como moeda oficial até 2019, ou seja, antes disso é muito provável que o euro não seja aceito no país. Outro impase que surge é entre a própria população que segundo uma pesquisa de 2011, realizada pela CBOS, 60% dos poloneses são contra a adesão do euro e apenas 32% é a favor' },
 
     { name: 'Dólar Canadense', code: 'CAD', symbol: '$', country: 'Canadá',
       url_name: 'dolar-canadense', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/ca.svg', 
-      story: '' },
-      
+      story: 'O Dolar Canadense ocupa a quinta posição entre as moedas mais mantidas do mundo (em volume), ficando apenas atrás do Dólar Americano, Euro, Iene e da Libra Esterlina. Isso se deve ao fato do Canadá ser um país com a economia sólida, establidade política e IDH alto, essa é a receita mais comum entre as moedas mais sólidas da atualidade. A história dessa moeda começa ainda com o Canadá como província, em 1841, adotou um novo sistema de monetário no qual a nova libra canadense valia 4 dólares americanos (93 grãos de ouro). Entretanto em 1850 a população percebeu que era preciso sair desse antiguado sistema monetário e se adequar aos mais atuais como libra esterlina ou ao sistema decimal do Dólar Americano. Devido a proximidade cada vez maior com os vizinhos americanos, os canadenses decidiram adequar sua moeda colonial ao Dólar Americano, porém nem tudo são flores, as autoridades imperiais do Reino Unido preferem a moeda esterlina como moeda única em todo o império Inglês. Por fim em 1853 a administração canadense adotou um padrão-ouro que atenderia em parte o padrão britânico e o padrão americano ao mesmo tempo. Em 1858 a província do Canadá começa a emetir moedas de bronze (1¢) e moedas de prata (10¢ e 20¢), a mudança vem em 1870 quando a moeda de bronza para de ser produzida e surgem as novas moedas de 25¢ e 50¢. Entretanto apenas em 1908 - 1912 o Canadá começa a emetir suas primeiras moedas de dólares de ouro' },
+
     { name: 'Pataca', code: 'MOP', symbol: 'MOP$', country: 'Macau',
       url_name: 'macau-pataca', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/mo.svg', 
