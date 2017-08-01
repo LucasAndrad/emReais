@@ -89,17 +89,17 @@ coins = Coin.create([
     { name: 'Grívnia Ucraniana', code: 'UAH', symbol: '₴', country: 'Ucrânia',
       url_name: 'grivnia-ucraniana', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/ua.svg', 
-      story: '' },
+      story: 'Grívnia é a moeda nacional da Ucrânia desde setembro de 1996, sendo que uma Grívnia é dividida em 100 kopiyky. Chamada de Keiven Rus quando ainda era colônia da Rússia a atual Ucrânia se declarou independente em 1917 e a sua moeda foi renomeada para Grívnia. De 2 a 16 e setembro a nova moeda substituiu a antiga (que estava hiperinflacionada da antiga União Soviética) por uma escala de 1 para 100.000. Um fato curioso é que a inserção da nova moeda no mercado foi bem rápida. No período de 2 a 16 de setembro o governo forçou os comerciantes a colocarem a nova moeda em circulação e todas as contas bancárias foram atualizadas automaticamente, assim no dia 16 de setembro 97% das moedas em circulação já eram Grívnia. Desde de então a única mudança que essa moeda sofreu foi na região da Crimeia que foi anexada pela Rússia no dia 18 de março de 2014, sendo assim nessa região a Grívnia foi substituida pelo roblo-russo.' },
 
     { name: 'Florim Húngaro', code: 'HUF', symbol: 'Ft', country: 'Hungria',
       url_name: 'florim-hungaro', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/hu.svg', 
-      story: '' },
+      story: 'Florim Húngaro é a moeda oficial de Hungria, 1 florim é divido em 100 fillér, entretanto as moedas (centavos de florim) não se encontram mais em circulação no país. O nome florim vem da cidade de Florença na Itália pois em 1252 era lá que as moedas de ouro eram mineradas. Entre os anos de 1868 e 1892 Florim foi o nome usado na moeda oficial do império Austro-Húngaro, depois disso o florim deu espaço para outras que entraram em circulação no império. Foi inserido no país em agosto de 1946 depois que a moeda da epóca atingiu a maior hiperinflação já registrada. A partir dai a moeda se manteve estável ao longo dos anos, sofreu um pouco com o fim da União Soviética nos anos 80, chegando a inflacionar cerca de 35% ao ano, entretante o governo mantém reformas e medidas em dia para estabalizar a moeda.' },
 
     { name: 'Dólar de Singapura', code: 'SGD', symbol: 'S$', country: 'Singapura',
       url_name: 'dolar-de-singapura', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/sg.svg', 
-      story: '' },
+      story: 'O dólar de Singapura é a moeda oficial do país, e um dólar é dividido em 100 centavos. Em 2016 o dólar de Singapura foi a 12º moeda mais negociada no mundo. Entre os anos de 1845 e 1939 duas moedas foram utilizadas antes do dólar de Singapura, o dólar Malaio e o dólar Estreito. Somente após a independência de Singapura da Malásia em 1965 foi criado o Conselho de Comissários de Moeda e a partir de abril de 1967 o país emitiu suas primeiras moedas e notas. Nos anos 70 o Parlamento de Singapura aprovou a Autoridade Monetária da Lei de Singapura em 1970, levando à formação do MAS (Autoridade Monetária de Singapura), o MAS era responsável por verificar se o dólar de Singapura flutuava dentro de uma margem aceitável (uma margem definida por eles mesmos que era mantida em segredo). Em 2003 o MAS se uniu com o  Conselho de Comissários de Moeda Cingapura para se tornarem um só e assim assumir a responsáblidades pelas notas e moedas do país.' },
 
     { name: 'Kuna Croata', code: 'HRK', symbol: 'kn', country: 'Croácia',
       url_name: 'kuna-croata', 
