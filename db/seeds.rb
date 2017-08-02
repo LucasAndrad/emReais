@@ -10,7 +10,7 @@ coins = Coin.create([
     { name: 'Dólar Americano', code: 'USD', symbol: '$', country: 'Estados Unidos',
       url_name: 'dolar-americano', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/us.svg', 
-      story: '' },  
+      story: 'O dólar americano é a moeda oficial dos Estados Unidos da America e dos territórios regidos pela constituição estadunidense. Inicialmente durante os séculos 16 e 18 o dólar americano era baseado no valor do dólar espanhol (o império espanhol era um dos maiores na época). Após a independência das 13 colônias os americanos estavam livres para usar outra moeda além da libra esterlina. Durante o século 18 e 19 o dólar americano flutou de acordo com o valor da prata e em seguida de acordo com o valor do ouro. Logo após a segunda guerra mundial foi díficil determinar o verdadeiro valor do dólar, o governo americano realizou o tratado de Bretton Woods que decidiu então fixar o valor de um onça (equivale a 28,3495 gramas de ouro), assim o dólar variava de acordo com o valor do ouro. Ao longos dos anos seguintes as reservas americanos de ouro diminuiram bastante e o sistema de Bretton Woods durou até a década de 70 quando surge o câmbio com maior flutuação devido as novas tecnologias da época. Em 1979 Paul Volcke foi nomeado presidente da Reserva Federal Americana, seus esforços para controlar a inflação do dólar tiveram resultados expressivos e em 1980 a moeda americana estava estabilizada. Durante os 30 anos seguintes 1981 a 2009, o dólar dos EUA perdeu mais da metade do seu valor, apesar de ser uma grande perda a moeda americano conseguiu resultados muito bons, como por exemplo um inflação de apenas 2% na década entre anos de 1997 e 2007. Atualmente é a moeda mais comercializada do mundo, sendo que dois terços do dólares existentes estão fora dos EUA.' },  
     
     { name: 'Euro', code: 'EUR', symbol: '€', country: 'União Europeia',
       url_name: 'euro', 
@@ -104,5 +104,5 @@ coins = Coin.create([
     { name: 'Kuna Croata', code: 'HRK', symbol: 'kn', country: 'Croácia',
       url_name: 'kuna-croata', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/hr.svg', 
-      story: '' }                          
+      story: 'Kuna é a moeda oficial da Croácia, ela é emitida pelo Banco Nacional Croata e mantida pelo Instituto Monetário Croata, uma Kune é dividida em 100 lipas. A palavra Kuna significa marten (no português marta, uma categoria de mamífiros que possui uma pele valiosa no mercado da moda). O Kuna moderna foi introduzida no país em Maio de 1994, o período de transação durou até o dia 31 de Dezembro do mesmo ano. Por ser uma moeda muito nova ela não sofreu nenhuma mundança drástica até agora, ao longo dos anos o governo Croata apenas tenta manter um valor estável para a moeda em relação ao valor do euro. A grande mudança que o a país espera é devido a adesão à União Europeia em julho de 2013, sendo assim a Kuna provavelmente será substituida pelo euro nos próximos anos, uma vez que o governo não mostrou nenhum objeção contra a adoção do euro como moeda nacional.' }          
   ])
