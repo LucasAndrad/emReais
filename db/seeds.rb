@@ -54,7 +54,7 @@ coins = Coin.create([
     { name: 'Ringgit Malaio', code: 'MYR', symbol: 'RM', country: 'Malásia',
       url_name: 'malasia-ringgit-malaio', 
       flag: 'https://lipis.github.io/flag-icon-css/flags/4x3/my.svg', 
-      story: '' },
+      story: 'O Ringgit Malaio é a moeda oficial da Malásia e um Ringgit é dividido em 100 sen. O emissor da moeda é o Banco Negara Tanah Melayu, banco nacional da Malásia. Em 1967 surge o dólar Malaio para substituir a moeda britânica que atuava no país. O Ringgit Malaio é um moeda relativamente nova que surgiu no final de 1997 durante a crise financeita asiática que atingiu também a região da Malásia.' },
 
     { name: 'Baht', code: 'THB', symbol: '฿', country: 'Tailândia', 
       url_name: 'tailandia-baht',
