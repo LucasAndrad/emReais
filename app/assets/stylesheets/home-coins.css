@@ -109,6 +109,28 @@ Euro style
   margin-right: auto;
 }
 
+/* 
+Coin stories styles
+*/
+.page-home-story-title {
+	font-size: 140%;
+}
+
+.page-home-coin-stories {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-home-coin-story {
+	text-align: justify;
+	text-indent: 35px;
+	padding-bottom: 2%;
+	border-bottom: 2px solid #a8a8a8;
+}
+
+
+
 @media screen and (max-width: 390px) {
 
   .home-title {
@@ -176,4 +198,7 @@ Euro style
 		font-size: 120%;		
 	}
 
+	.page-home-coin-stories {
+		width: 90%;
+	}
 }

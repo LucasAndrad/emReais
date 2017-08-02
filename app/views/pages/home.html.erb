@@ -42,6 +42,32 @@
 </div>
 <%= link_to 'Mais Moedas' , coins_path, class: 'button myButton-mobile' %>
 
+<br>
+
+<div class="page-home-coin-stories">
+ 
+	<h3 class="page-home-story-title"> História do Dinheiro </h3>
+	<div class="page-home-coin-story">
+		O dinheiro é o objeto usado para a compra de bens ou serviços em todo o mundo. Cada país é responsável pela unidade monetária que possui, ou seja, cada moeda é regida pelo seu próprio governo. Começando a história do dinheiro. No ínicio do comercio entre os homens/mulheres não existia a ideia de dinheiro, tudo era organizado através de trocas entre as mercadorias dos interessados, as trocas eram avaliadas pela qualidade do produto, pelo tempo gasto durante sua confecção e também pela necessidade dos comerciantes. A primeira concepção de dinheiro surge na Mesopotâmia cerca de 3000 anos antes de cristo, os objetos de troca eram comparados com seu valor em grãos, por exemplo uma espada de madeira valeria 500 grãos de cevada, logo o dono da espada teria 500 grãos para gastar com outras mercadorias. É o mesmo que colocar o grãos no lugar das moedas atuais. Porém lembre-se que não existia o conceito de dinheiro, notas ou bancos naquela época, os mesopotâmios usavam grãos pois era algo de valor para eles, e por se tratar de uma região específica os grãos naquele local teriam um valor único "universal", ou seja, todas poderiam utiliza-lo para trocas. Essa ideia não parou por ai, com o passar do anos, décadas e séculos novas mercadorias ganharam mais destaque do que outras, e essas assumiam o papel de ser a mercadoria-moeda, aquele que seria mais utilizada entre as trocas dos(as) comerciantes. Entre essas mercadorias podemos citar: o gado, o sal, a madeira, sementes e até mesmo remédios. No nosso próprio país podemos citar exemplos que são vistos nos livros de história até hoje, mercadorias como o cacau, o pau-brasil, o açúcar e o tabaco foram tidas como mercadorias-moeda pois poderiam ser utilizadas para troca em quase todos os lugares. O dinheiro propriamente dito começa a surgir com a descoberta e manejo do metal, finalmente surgia um objeto que poderia ser maleável, customizado e fácil de transportar. O metal também ganhou muito espaço devido à sua diversidade, existiam metais mais raros do que outros, mais maleáveis e mais belos. Assim a partir do século 7 antes de cristo surgem as primeiras moedas com características das moedas atuais, os gregos tiveram o cuidado de cunhar suas moedas com peso, tamanho e valor definidos, além do formato e identificação comprovando a autenticidade da moeda. No reino de Lídia (reino que escravizou parte dos persas e deu origem ao vasto império Persa de Ciro o grande) as primeiras moedas eram na verdade ocas, não tinham nada por dentro. Outra característica das moedas foi representação de "desenhos" e imagens nas moedas, essas imagens são chamadas de efígie. A primeira efígia conhecida surge o império de Alexandre o Grande na Macedônia 300 anos antes de cristo. Com o passar do tempo vão surgindo as moedas de ouro, prata e bronza, elas deixam de ser cunhadas a mão se tornam regulares (todas elas são iguais, sem imperfeições singulares) e por fim surgem as notas de papel, que são melhores que o dinheiro feito de metal, pois tem um custo benefício melhor para quem a produz e para quem transporta. Hoje entramos em uma nova era do dinheiro, o dinheiro virtual, com moedas virtuais e um conceito totalmente novo de transação que é a transação virtual que não possui custo, taxas e nem muita demora, pode acontencer em cerca de minutos. É um futuro ainda não muito explorado e nem muito certo uma vez que os maiores bancos são bancos de longa data, "conservadores" e não são tão aptos a mudanças assim. Até que as moedas virtuais ganham a confiança dos banqueiros e da população muita coisa pode acontecer.
+	</div>
+
+	<h3 class="page-home-story-title"> História do Dólar </h3>
+	<div class="page-home-coin-story">
+		<%= @dolar.story %>
+	</div>
+	
+	<h3 class="page-home-story-title"> História do Euro </h3>
+	<div class="page-home-coin-story">
+		<%= @euro.story %>
+	</div>
+
+	<h3 class="page-home-story-title"> História da Libra Esterlina </h3>
+	<div class="page-home-coin-story">
+		<%= @libra.story %>
+	</div>
+
+</div>
+
 <script type="text/javascript">
 
 	$("#dolar-input").keyup(function(){
