@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   root 'pages#home', as: 'home'
 
+# Pages 
+  get 'erro' => 'pages#error', as: 'error'
+
 # Coins
   get 'moedas' => 'coins#index', as: 'coins'
   get 'moeda/:url_name/.:id' => 'coins#show', as: 'coin_show'
