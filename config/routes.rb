@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
 # Coins
   get 'moedas' => 'coins#index', as: 'coins'
-  get 'moeda/:url_name/.:id' => 'coins#show', as: 'coin_show'
+  get 'moeda/:url_name' => 'coins#show', as: 'coin_show'
   get 'magic' => 'coins#magic', as: 'coin_magic'
   post 'magic/' => 'coins#update_coins_value'
 

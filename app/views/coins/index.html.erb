@@ -5,7 +5,7 @@
 
     <div class="coin-container">
       <div class="coin-title-name">
-        <%= link_to coin.name, coin_show_path(coin, url_name: coin.url_name), class: 'coin-name-link' %>
+        <%= link_to coin.name, coin_show_path(coin), class: 'coin-name-link' %>
       </div>
       <img src="<%= coin.flag %>" alt="<%= coin.country%> Flag" class="flag-coins-index">
       <p class"coin-country-index">
@@ -15,7 +15,7 @@
       <div class="coin-value">
         1 <%= coin.symbol %> = R$ <%= coin.value.round(4) %> 
         <br> <br>
-        <%= link_to "Novos valores", coin_show_path(coin, url_name: coin.url_name) %>
+        <%= link_to "Novos valores", coin_show_path(coin) %>
       </div>
     </div>
 

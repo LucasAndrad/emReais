@@ -5,7 +5,7 @@ class CoinsController < ApplicationController
   end
 
   def show
-    @coin = Coin.find(params[:id])
+    @coin = Coin.find_by(url_name: params[:url_name])
   end
 
   def magic
